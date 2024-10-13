@@ -1,0 +1,10 @@
+name: First Workflow
+on: workflow_dispatch     # it makes sure that we can manually triger this workflow.
+jobs:
+  first-job:              # its just name 
+    runs-on: ubuntu-latest  # https://docs.github.com/en/actions/using-github-hosted-runners/using-github-hosted-runners/about-github-hosted-runners
+    steps:
+      - name: Print greeting
+        run: echo "Hello Worls!"
+      - name: Print goodbye
+        run: echo "Done - Bye!"
